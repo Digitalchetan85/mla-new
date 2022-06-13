@@ -1,0 +1,217 @@
+$primaryColor: #0d6efd;
+$whiteColor: #fff;
+$blackColor: #000;
+$newColor: #0dcaf0;
+$success: #026420;
+
+#navbar {
+  .header-transparent {
+    position: absolute;
+    width: 100%;
+    background-color: #ffffff00;
+  }
+  .scrolling-header {
+    background-color: #369edf;
+  }
+  .nav-link {
+    color: $whiteColor;
+    padding: 10px 20px;
+    margin: 0px 5px;
+    text-transform: uppercase;
+    font-weight: 600;
+    font-size: 16px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    text-align: center;
+    .sub {
+      font-size: 12px;
+      text-transform: capitalize;
+    }
+    &.active,
+    &:hover {
+      background-color: $whiteColor;
+      color: $primaryColor;
+    }
+  }
+  .dropdown-menu {
+    background-color: $whiteColor;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+  }
+  .dropdown-item {
+    color: $primaryColor;
+    text-transform: uppercase;
+    font-weight: 600;
+    font-size: 14px;
+    &:hover {
+      background-color: $primaryColor;
+      color: $whiteColor;
+    }
+  }
+  .dropdown {
+    &:hover {
+      > .dropdown-menu {
+        display: block;
+      }
+    }
+  }
+}
+
+#navbar-page {
+  .nav-link {
+    color: $whiteColor;
+    padding: 10px 20px;
+    margin: 0px 5px;
+    text-transform: uppercase;
+    font-weight: 600;
+    font-size: 16px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    text-align: center;
+    .sub {
+      font-size: 12px;
+      text-transform: capitalize;
+    }
+    &.active,
+    &:hover {
+      background-color: $primaryColor;
+      color: $whiteColor;
+    }
+  }
+  .dropdown-menu {
+    background-color: $whiteColor;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+  }
+  .dropdown-item {
+    color: $primaryColor;
+    text-transform: uppercase;
+    font-weight: 600;
+    font-size: 14px;
+    &:hover {
+      background-color: $primaryColor;
+      color: $whiteColor;
+    }
+  }
+  .dropdown {
+    &:hover {
+      > .dropdown-menu {
+        display: block;
+      }
+    }
+  }
+}
+// #body{
+//     background-image: url("../images/backtest.png");
+//     background-repeat: no-repeat;
+//   background-position: center;
+//   background-size: cover;
+//   background-attachment: fixed;
+// }
+#banner {
+  .carousel-indicators [data-bs-target] {
+    background-color: $primaryColor;
+  }
+  .carousel-indicators [data-bs-target] {
+    width: 20px !important;
+    height: 20px !important;
+    border-radius: 50% !important;
+  }
+  .custom {
+    margin-left: 18rem !important;
+  }
+}
+
+#footer {
+  .nav-link {
+    color: $whiteColor;
+  }
+  .custom {
+    &:hover {
+      .fa-map {
+        color: $newColor !important;
+        transform: scale(1.2);
+      }
+    }
+  }
+  .custom1 {
+    &:hover {
+      .fa-phone-volume {
+        color: $newColor !important;
+        transform: scale(1.2);
+      }
+    }
+  }
+  .custom2 {
+    &:hover {
+      .fa-envelope {
+        color: $newColor !important;
+        transform: scale(1.2);
+      }
+    }
+  }
+}
+
+#bg-light {
+  background-color: #fef4ea;
+}
+
+#reg1 {
+  .input-group {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    .input-group-text {
+      border-radius: 50px 0px 50px 50px;
+      border-width: 1px;
+    }
+    
+    
+  }
+  .btn {
+    width: 100%;
+    padding: 12px 20px;
+    display: inline-block;
+    border-radius: 0px 50px 50px;
+    border-width: 1px;
+  }
+
+  .fa-globe, .fa-location-dot, .fa-envelope{
+    
+        border-radius: 50%;
+        border-top-right-radius: 0%;
+            
+  }
+}
+
+@media only screen and (min-width: 200px) and (max-width: 768px) {
+  #banner {
+    h2 {
+      font-size: 12px;
+    }
+    p {
+      font-size: 10px;
+    }
+    .custom {
+      width: 200px;
+    }
+  }
+
+  // #social {
+  //   iframe {
+  //     width:350px;
+  //     height:500px;
+  //   }
+  // }
+}
+
+#contactform1 {
+  border: 1px solid #00000014;
+  border-radius: 10px;
+  margin-bottom: 80px;
+  padding: 30px 20px;
+  h2 {
+    color: #4d7df0;
+  }
+}
