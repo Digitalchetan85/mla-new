@@ -44,9 +44,9 @@ use Illuminate\Support\Facades\Route;
 // });
 
 Route::get('/', Home::class)->name('home');
-Route::get('/constituency/developement-activities', DevelopmentActivities::class)->name('development');
-Route::get('/constituency/welfair-activities', WelfairActivities::class)->name('welfair');
-Route::get('/events/good-morning-denduluru', GoodMorningDenduluru::class)->name('goodmorning');
+Route::get('/constituency/development-activities', DevelopmentActivities::class)->name('development');
+Route::get('/constituency/welfare-activities', WelfairActivities::class)->name('welfair');
+Route::get('/events/gadapa-gadapaku-mana-prabhutvam', GoodMorningDenduluru::class)->name('goodmorning');
 Route::get('/events/skill-up-denduluru', SkillUpDenduluru::class)->name('skill');
 Route::get('/events/jagan-maata-abbaya-bata', JaganMaata::class)->name('jagan');
 Route::get('/contact', Contact::class)->name('contact');

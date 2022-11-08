@@ -31,6 +31,6 @@ class RegisterMail extends Mailable
      */
     public function build()
     {
-       return $this->subject('New Registered detials.')->view('email.registermail');
+       return $this->subject('Get in Touch details.')->view('email.registermail');
     }
 }

@@ -75,11 +75,11 @@
                 <th>graduationpercentage</th>
                 <td>{{ $data['graduationpercentage'] }}</td>
             </tr>
-            {{-- <tr>
+            <tr>
                 <th>resume</th>
-                <td><a href="{{ asset('assets/images/resumes') }}/{{ $data['imagename'] }}" alt=""
+                <td><a href="{{ asset('assets/images/resumes') }}/{{ $data['resume'] }}" alt=""
                     class="text-decoration-none" target="_blank">Resume</a></td>
-            </tr> --}}
+            </tr>
         </tbody>
     </table>
 

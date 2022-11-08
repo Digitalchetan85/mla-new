@@ -13,7 +13,8 @@
   <link href="{{asset('assets/css/all.min.css')}}" rel="stylesheet">
   <link href="{{asset('assets/css/style.css')}}" rel="stylesheet">
 
-  <title>ABBAYA CHOWDARY KOTARU - Denduluru</title>
+  {{-- <title>ABBAYA CHOWDARY KOTARU - Denduluru</title> --}}
+  {!! SEO::generate() !!}
 
   @livewireStyles
 </head>
@@ -32,10 +33,10 @@
           <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
             <ul class="navbar-nav ms-auto mb-lg-0">
               <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="{{route('home')}}">Home</span></a>
+                <a class="nav-link {{ Route::currentRouteNamed('/') ? 'active' : '' }}" aria-current="page" href="{{route('home')}}">Home</span></a>
               </li>
               <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" data-toggle="dropdown"
+                <a class="nav-link dropdown-toggle {{ Request::segment(1) === 'constituency' ? 'active' : null }}" href="#" id="navbarDropdown" data-toggle="dropdown"
                   data-hover="dropdown" data-delay="1000" data-close-others="false">
                   My Constituency </span>
                 </a>
@@ -49,7 +50,7 @@
                 </ul>
               </li>
               <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
+                <a class="nav-link dropdown-toggle {{ Request::segment(1) === 'events' ? 'active' : null }}" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
                   aria-expanded="false">
                   Events</span>
                 </a>
@@ -66,7 +67,7 @@
                 </ul>
               </li>
               <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
+                <a class="nav-link dropdown-toggle {{ Request::segment(1) === 'registration' ? 'active' : null }}" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
                   aria-expanded="false">
                   Get In Touch</span>
                 </a>
@@ -137,7 +138,7 @@
               @endif
               @endif
             </ul>
-            <div class="d-flex">
+            <div class="d-flex justify-content-center">
               <a href="https://m.facebook.com/kotaru9999" class="text-decoration-none" target="_blank"><i
                   class="fa-brands fa-facebook-f text-white me-3 fs-4"></i></a>
               <a href="https://twitter.com/AbbayaChowdary" target="_blank"><i
@@ -245,7 +246,7 @@
     <div class="container">
       <div class="row">
         <div class="col-md-4">
-          <p class="mb-0 py-2 text-center text-white">© Copyrights ABBAYA CHOWDARY KOTARU 2021.</p>
+          <p class="mb-0 py-2 text-center text-white">© Copyrights ABBAYA CHOWDARY 2022.</p>
         </div>
         <div class="col-md-4">
           <p class="text-white mb-0 py-2 text-center">Design and Developed by <a

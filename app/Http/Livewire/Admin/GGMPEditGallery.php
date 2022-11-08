@@ -33,6 +33,7 @@ class GGMPEditGallery extends Component
         }
         $product->save();
         session()->flash('success', 'Image Updated Successfully');
+        $this->reset();
     }
 
     public function render()

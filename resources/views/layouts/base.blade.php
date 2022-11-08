@@ -13,7 +13,8 @@
   <link href="{{asset('assets/css/all.min.css')}}" rel="stylesheet">
   <link href="{{asset('assets/css/style.css')}}" rel="stylesheet">
 
-  <title>ABBAYA CHOWDARY KOTARU - Denduluru</title>
+  {{-- <title>ABBAYA CHOWDARY KOTARU - Denduluru</title> --}}
+  {!! SEO::generate() !!}
 
   @livewireStyles
 </head>
@@ -31,15 +32,15 @@
         <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
           <ul class="navbar-nav ms-auto mb-lg-0">
             <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="{{route('home')}}">Home</a>
+              <a class="nav-link {{ Request::is('/') ? 'active' : '' }}" aria-current="page" href="{{route('home')}}">Home</a>
             </li>
             <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" data-toggle="dropdown"
+              <a class="nav-link dropdown-toggle {{Request::is('constituency/developement-activities') ? ' active' : ''}}" href="#" id="navbarDropdown" data-toggle="dropdown"
                 data-hover="dropdown" data-delay="1000" data-close-others="false">
                 My Constituency</span>
               </a>
               <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                <li><a class="dropdown-item" tabindex="-1" href="{{route('development')}}">Development Activities</a></li>
+                <li><a class="dropdown-item {{Request::is('constituency/developement-activities') ? ' active' : ''}}" tabindex="-1" href="{{route('development')}}">Development Activities</a></li>
                 <li>
                   <hr class="dropdown-divider">
                 </li>
@@ -159,7 +160,7 @@
         <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
           <ul class="navbar-nav ms-auto mb-lg-0">
             <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="{{route('home')}}">Home </span></a>
+              <a class="nav-link {{ (request::is('/')) ? 'active' : '' }}" aria-current="page" href="{{route('home')}}">Home </span></a>
             </li>
             <li class="nav-item dropdown">
               <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" data-toggle="dropdown"
@@ -247,7 +248,7 @@
             @endif
             @endif
           </ul>
-          <div class="d-flex">
+          <div class="d-flex justify-content-center">
             <a href="https://m.facebook.com/kotaru9999" class="text-decoration-none" target="_blank"><i
                 class="fa-brands fa-facebook-f text-white me-3 fs-4"></i></a>
             <a href="https://twitter.com/AbbayaChowdary" target="_blank"><i
@@ -354,7 +355,7 @@
     <div class="container">
       <div class="row">
         <div class="col-md-4">
-          <p class="mb-0 py-2 text-center text-white">© Copyrights ABBAYA CHOWDARY KOTARU 2021.</p>
+          <p class="mb-0 py-2 text-center text-white">© Copyrights ABBAYA CHOWDARY 2022.</p>
         </div>
         <div class="col-md-4">
           <p class="text-white mb-0 py-2 text-center">Design and Developed by <a href="http://logodesignerbangalore.com/" target="_blank"

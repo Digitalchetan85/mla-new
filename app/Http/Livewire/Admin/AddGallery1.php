@@ -30,6 +30,7 @@ class AddGallery1 extends Component
 
         $newdata->save();
         session()->flash('success', 'Image Uploaded Successfully');
+        $this->reset();
     }     
 
     public function render()

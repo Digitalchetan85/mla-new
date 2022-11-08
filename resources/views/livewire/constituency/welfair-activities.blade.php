@@ -1792,7 +1792,7 @@
             <div class="row">
                 <div class="col-md-4 align-self-center">
                     <div class="text-center">
-                        <img src="{{asset('assets/images/schemes/Jagananna-thodu.png')}}" alt="" class="img-fluid">
+                        <img src="{{asset('assets/images/Jagananna-thodu1.png')}}" alt="" class="img-fluid">
                     </div>
                 </div>
                 <div class="col-md-8 align-self-center">
